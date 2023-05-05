@@ -1,0 +1,65 @@
+.home_con {
+    background-color: black;
+    height: fit-content;
+    width: 100%;
+    padding: 10rem;
+    font-family:Arial, Helvetica, sans-serif;
+    h2{
+        color: white;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+  & .main_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-content: flex-start;
+    grid-row-gap: 3rem;
+    justify-items: start;
+    & .main_card {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      & .wrapper {
+        cursor: pointer;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        & .text {
+          position: absolute;
+          bottom: 1rem;
+          left: 1rem;
+          & .name{
+            font-size: 1.5rem;
+            color: white;
+            font-family: sans-serif;
+            letter-spacing: 0.07rem;
+            word-spacing: -0.03rem;
+          }
+          & .star{
+            color: #EDB020;
+            font-size: 1.5rem;
+            padding-bottom: 0.5rem;
+            display: flex;
+            gap: 1rem;
+          }
+        }
+        & .overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,0) 66%, rgba(0,0,0,0.9766500350140056) 100%);
+            top: 0;
+            &:hover{
+                background: rgb(0,0,0);
+                background: linear-gradient(180deg, rgba(0,0,0,0.42482930672268904) 66%, rgba(0,0,0,0.9766500350140056) 100%);
+            }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.main_select{
+            background-color: black;
+             color: white;
+    & .backgroundOverlay{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-size: 130vh;
+        background-repeat: no-repeat;   
+        background-position: center right;
+        & .overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9430365896358543) 39%, rgba(0,0,0,0.5452774859943977) 100%);
+        }
+        & .text{
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            position: relative;
+            & .name{
+                font-size: 10rem;
+            }
+            & .star{
+                font-size: 3.5rem;
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                color: #EDB020;
+            }
+            & .genre{
+                padding-top: 1rem;
+                font-size: 2rem;
+                letter-spacing: 0.1rem;
+                word-spacing: 0.1rem;
+            }
+        }
+    }
+    & .text_para{
+        height: fit-content;
+        width: 100%;
+        padding: 10rem 10rem;
+        color: white;
+        & h2{
+            font-size: 4rem;
+        }
+        & p{
+            padding-top: 2rem;
+            font-size: 2rem;
+            word-spacing: 0.1rem;
+        }
+    }
+}
